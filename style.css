@@ -164,28 +164,6 @@ svg {
   letter-spacing: 0.1px;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: left;
-  padding: 10px 20px;
-  background: transparent; 
-  font-size: 14px;
-  color: #0f0f0f;
-  text-align: center;
-}
-
-.footer a {
-  color: #5865f2;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
 #spinGroup {
   transform-box: fill-box;
   transform-origin: 50% 50%;
@@ -205,6 +183,7 @@ svg {
   color: #fff;
   font-weight: 700;
 }
+
 
 
 
