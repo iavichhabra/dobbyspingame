@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dobby Spin Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <h1>Dobby Spin Game</h1>
+      </div>
+      <p class="sub">Enter your Discord username then spin</p>
+
+      <div class="row">
+        <input
+          id="username"
+          type="text"
+          placeholder="Enter Discord username (e.g. Humanbot)"
+          maxlength="40"
+        />
+        <button id="spinBtn">Spin</button>
+      </div>
+
+      <div class="stage">
+        <div class="pointer-wrap">
+          <div class="pointer-base" aria-hidden="true"></div>
+          <div class="pointer-tip" aria-hidden="true"></div>
+        </div>
+
+        <div class="wheel-wrap">
+          <svg id="wheelSvg" viewBox="-300 -300 600 600" aria-live="polite">
+            <defs>
+              <radialGradient id="hubGrad" cx="35%" cy="35%">
+                <stop offset="0%" stop-color="#ffffff" />
+                <stop offset="45%" stop-color="#d7dbff" />
+                <stop offset="100%" stop-color="#98a3ff" />
+              </radialGradient>
+            </defs>
+
+            <circle r="286" class="outerGlow"></circle>
+            <circle r="276" class="ring"></circle>
+
+            <g id="spinGroup"></g>
+
+            <circle r="48" class="hub"></circle>
+          </svg>
+        </div>
+
+        <div id="result"></div>
+      </div>
+
+      <div class="footer">
+        <p>
+          © 2025 Dobby Spin Game. Made by
+          <a href="https://x.com/humanbotcrypto"> Humanbot </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
