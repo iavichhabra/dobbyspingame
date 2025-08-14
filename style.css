@@ -164,26 +164,6 @@ svg {
   letter-spacing: 0.1px;
 }
 
-#spinGroup {
-  transform-box: fill-box;
-  transform-origin: 50% 50%;
-  transition: none;
-}
-
-#result {
-  display: grid;
-  place-items: center;
-  margin-top: 18px;
-  min-height: 66px;
-}
-
-.pill {
-  padding: 14px 16px;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: 700;
-}
-
 .footer {
   position: fixed;
   bottom: 0;
@@ -205,5 +185,28 @@ svg {
 .footer a:hover {
   text-decoration: underline;
 }
+
+#spinGroup {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition: none;
+}
+
+#result {
+  display: grid;
+  place-items: center;
+  margin-top: 18px;
+  min-height: 66px;
+}
+
+.pill {
+  padding: 14px 16px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+
 
 
